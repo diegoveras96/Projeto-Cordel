@@ -3,7 +3,8 @@
 :root{
     --font1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
-    --fonte3: 'Sriracha', cursive; 
+    --fonte3: 'Sriracha', cursive;
+    --sombra: 1px 1px 8px rgba(0, 0, 0, 0.300);
 }
 
 *{
@@ -24,13 +25,14 @@ a:hover{
 
 header{
     background-color: black;
+    box-shadow: var(--sombra);
     text-align: center;
     color: white;
     min-height: 200px;
 }
 header > h1{
     font-family: var(--fonte2);
-    font-size: 10vh;
+    font-size: 10vw;
     font-variant: small-caps;
     padding-top: 50px;
 }
@@ -56,6 +58,7 @@ section.normal{
 section.fundo-img{
     color: white;
     position: relative;
+    box-shadow: var(--sombra);
 }
 .fundo-img > p{
     background-color: rgba(0, 0, 0, 0.5);

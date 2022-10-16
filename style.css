@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive; 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+a{
+    font-style: var(--font1);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+    min-height: 200px;
+}
+header > h1{
+    font-family: var(--fonte2);
+    font-size: 10vh;
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+header > p{
+    padding-bottom: 50px;
+}
+
+main p{
+    line-height: 2em;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-size: 3.5vw;
+    font-family: var(--fonte3);
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.fundo-img{
+    color: white;
+    position: relative;
+}
+.fundo-img > p{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+section#flor{
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+}
+section#carta{
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+}
+
+footer{
+    background-color: black;
+    background-image: url('imagens/octocat.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    font-family: var(--font1);
+    color: white;
+    text-align: center;
+    padding: 1vh;
+}
+

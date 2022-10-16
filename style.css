@@ -74,10 +74,6 @@ section#carta{
 
 footer{
     background-color: black;
-    background-image: url('imagens/octocat.png');
-    background-repeat: no-repeat;
-    background-position: center right;
-    background-size: contain;
     font-family: var(--font1);
     color: white;
     text-align: center;

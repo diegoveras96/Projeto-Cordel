@@ -1,10 +1,10 @@
+@charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
 
 :root{
     --font1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
-    --sombra: 1px 1px 8px rgba(0, 0, 0, 0.300);
 }
 
 *{
@@ -13,11 +13,15 @@
     font-size: 1em;
 }
 
+html, body{
+    min-height: 100%vh;
+}
+
 a{
     font-style: var(--font1);
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
 a:hover{
     text-decoration: underline;
@@ -25,7 +29,7 @@ a:hover{
 
 header{
     background-color: black;
-    box-shadow: var(--sombra);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.300);
     text-align: center;
     color: white;
     min-height: 200px;
@@ -48,7 +52,7 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    font-size: 3.5vw;
+    font-size: 3.3vw;
     font-family: var(--fonte3);
 }
 section.normal{
@@ -57,8 +61,10 @@ section.normal{
 }
 section.fundo-img{
     color: white;
-    position: relative;
-    box-shadow: var(--sombra);
+    box-shadow: inset 1px 1px 8px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 .fundo-img > p{
     background-color: rgba(0, 0, 0, 0.5);
@@ -68,11 +74,11 @@ section.fundo-img{
 }
 section#flor{
     background-image: url('imagens/background001.jpg');
-    background-size: cover;
+    background-position: right center;
+
 }
 section#carta{
     background-image: url('imagens/background002.jpg');
-    background-size: cover;
 }
 
 footer{
